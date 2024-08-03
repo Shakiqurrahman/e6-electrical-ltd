@@ -9,6 +9,7 @@ body {
     font-family: "Jost", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Additonal custom styles  */

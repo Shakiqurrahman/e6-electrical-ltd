@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+    const navbarRef = useRef(null);
+  const [isFixed, setIsFixed] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (navbarRef.current) {
+      const offsetTop = navbarRef.current.offsetTop;
+
+      if (currentScrollY > lastScrollY && currentScrollY >= offsetTop) {
+        setIsFixed(true);
+      } else if (currentScrollY <= offsetTop) {
+        setIsFixed(false);
+      }
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
     return (
-        <nav className="bg-navy">
+        <nav className={`bg-navy w-full  ${
+            isFixed ? 'fixed top-0 left-0' : 'relative'
+          }`}  ref={navbarRef}>
             <div className="flex items-center justify-between max-width py-3">
                 <ul className="flex gap-2 text-white">
                     <li>

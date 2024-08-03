@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section>
+        <section className='h-[350vh]'> 
            <h1>hero section</h1> 
         </section>
     );
