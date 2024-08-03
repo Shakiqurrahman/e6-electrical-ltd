@@ -1,7 +1,6 @@
 import React from "react";
 import { IoCall } from "react-icons/io5";
 import logo from "../../assets/images/logo.png";
-import Navbar from "./Navbar";
 
 const Header = () => {
     return (
@@ -37,8 +36,6 @@ const Header = () => {
                     </span>
                 </div>
             </div>
-            {/* navigation */}
-            <Navbar />
         </header>
     );
 };
