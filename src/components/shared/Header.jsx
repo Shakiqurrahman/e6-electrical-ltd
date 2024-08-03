@@ -32,7 +32,9 @@ const Header = () => {
                         >
                             1234567890
                         </a>
-                        <p className="text-[8px] md:text-sm">Mon to Sat 8:00 AM to 6:00 PM</p>
+                        <p className="text-[8px] md:text-sm">
+                            Mon to Sat 8:00 AM to 6:00 PM
+                        </p>
                     </span>
                 </div>
             </div>

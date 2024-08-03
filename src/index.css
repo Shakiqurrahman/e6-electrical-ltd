@@ -18,5 +18,108 @@ body {
 }
 
 .active {
-    @apply text-base font-semibold uppercase px-5 py-2.5  text-navy bg-white rounded-lg;
+    @apply text-base font-semibold uppercase px-5 py-3.5 md:py-2.5  text-navy bg-white md:rounded-lg;
 }
+
+/* hamburger menu */
+
+.hamburger {
+    width: 23px;
+    height: 1.6px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 1.6px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-7px);
+  }
+  
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 1.6px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(7px);
+  }
+  
+  .active-hamburger {
+    width: 23px;
+    height: 1.6px;
+    background: transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .active-hamburger::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 1.6px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease-in-out;
+    transform: rotate(45deg);
+  }
+  
+  .active-hamburger::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 1.6px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-45deg);
+  }
+  
+  
+  @media (720px > width) {
+    .nav-links {
+      position: absolute;
+      flex-direction: column;
+      top: 64.5px;
+      right: 0;
+      width: 100%;
+      background: #05254e;
+      /* transform: translateX(100%); */
+      transition: all 0.4s ease-in-out;
+      overflow: hidden;
+      height: 0;
+    }
+  
+    .side-nav {
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      right: 0;
+      top: 64.5px;
+      background: #031731;
+      color: white;
+      /* transform: translateX(0%); */
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+    }
+  
+    .side-nav li,
+    .nav-links li {
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 1px solid #031731;
+    }
+  }
+  
