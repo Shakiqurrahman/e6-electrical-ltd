@@ -21,6 +21,15 @@ body {
     @apply text-base font-semibold uppercase px-5 py-3.5 md:py-2.5  text-navy bg-white md:rounded-lg;
 }
 
+/* hero background image  */
+.hero-bg {
+  background-image: url("/src/assets/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
 /* hamburger menu */
 
 .hamburger {
