@@ -9,6 +9,7 @@ export default withMT({
         secondary: '#2ae3ff',
         navy: "#05254e"
       },
+      
     },
   },
   plugins: [],
