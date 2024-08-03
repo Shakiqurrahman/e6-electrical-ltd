@@ -9,7 +9,7 @@ const Layout = () => {
             <Header />
             <Outlet />
             <ScrollRestoration />
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
