@@ -7,7 +7,7 @@ const Navbar = () => {
         setIsOpen(false);
     };
     return (
-        <nav className={`bg-navy w-full  sticky top-0`}>
+        <nav className={`bg-navy w-full  sticky top-0 z-50`}>
             <div className="flex flex-row-reverse md:flex-row items-center justify-between max-width py-3">
                 <ul className={
               isOpen ? "side-nav" : "nav-links  md:flex gap-2 text-white"

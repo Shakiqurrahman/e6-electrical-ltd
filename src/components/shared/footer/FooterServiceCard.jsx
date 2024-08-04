@@ -19,11 +19,11 @@ function FooterServiceCard() {
           </p>
           <a
             href=""
-            className="bg-secondary font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-primary hover:text-white"
+            className="bg-primary text-white font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-white hover:text-primary"
           >
             <svg
               aria-hidden="true"
-              className="e-font-icon-svg e-fab-wpforms h-[15px] group-hover:fill-white duration-300 inline-block me-2 mb-1"
+              className="e-font-icon-svg e-fab-wpforms h-[15px] fill-white group-hover:fill-primary duration-300 inline-block me-2 mb-1"
               viewBox="0 0 448 512"
               xmlns="http://www.w3.org/2000/svg"
             >
