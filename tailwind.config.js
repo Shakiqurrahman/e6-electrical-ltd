@@ -5,12 +5,11 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        primary: '#1b48f9',
-        secondary: '#2ae3ff',
-        navy: "#05254e"
+        primary: "#1b48f9",
+        secondary: "#2ae3ff",
+        navy: "#05254e",
       },
     },
   },
   plugins: [],
 });
-
