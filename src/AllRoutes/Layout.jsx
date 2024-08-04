@@ -1,19 +1,17 @@
 import React from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
-import Footer from "../components/shared/Footer";
 import Header from "../components/shared/Header";
-import Navbar from "../components/shared/Navbar";
+import Footer from "../components/shared/footer/Footer";
 
 const Layout = () => {
-    return (
-        <>
-            <Header />
-            <Navbar />
-            <Outlet />
-            <ScrollRestoration />
-            {/* <Footer /> */}
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <ScrollRestoration />
+      <Footer />
+    </>
+  );
 };
 
 export default Layout;
