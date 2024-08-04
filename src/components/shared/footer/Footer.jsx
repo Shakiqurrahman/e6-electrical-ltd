@@ -1,9 +1,5 @@
-import {
-  IoCall,
-  IoLogoFacebook,
-  IoLogoTwitter,
-  IoLogoYoutube,
-} from "react-icons/io5";
+import { FaFacebookF } from "react-icons/fa6";
+import { IoCall, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
 import card from "../../../assets/images/card.png";
 import logo from "../../../assets/images/logo.png";
 import Copyright from "./Copyright";
@@ -11,7 +7,7 @@ import FooterServiceCard from "./FooterServiceCard";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-20">
       {/* ==== footer service card ==== */}
       <FooterServiceCard />
 
@@ -63,7 +59,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center gap-3">
                 <a href="">
-                  <IoLogoFacebook className="text-white text-xl duration-300 hover:text-secondary" />
+                  <FaFacebookF className="text-white text-xl duration-300 hover:text-secondary" />
                 </a>
                 <a href="">
                   <IoLogoTwitter className="text-white text-xl duration-300 hover:text-secondary" />
