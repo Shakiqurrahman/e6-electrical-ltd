@@ -8,6 +8,7 @@ import WorkGallery from "../components/WorkGallery";
 const Home = () => {
   return (
     <>
+    {/* ==== Hero Section ==== */}
       <Hero />
 
       {/* ==== Our Process Section ==== */}

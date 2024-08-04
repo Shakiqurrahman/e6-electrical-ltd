@@ -1,15 +1,28 @@
-import React from 'react';
-import Banner from '../components/shared/Banner';
-import AboutUs from '../components/AboutUs';
-import Vision from '../components/Vision';
+import React from "react";
+import AboutUs from "../components/AboutUs";
+import Banner from "../components/shared/Banner";
+import Vision from "../components/Vision";
+import Heading from "../components/Heading";
+import OurProducts from "../components/OurProducts";
 
 const About = () => {
-    const pageName = 'About';
+    const pageName = "About";
     return (
         <>
-            <Banner pageName={pageName}/>
+            {/* ==== Banner Section ==== */}
+            <Banner pageName={pageName} />
+
+            {/* ==== About Us Section ==== */}
             <AboutUs />
+
+            {/* ==== vision Section ==== */}
             <Vision />
+
+            {/* ==== Our Products Section ==== */}
+            <section className="max-width py-6">
+                <Heading>We Use Those Products</Heading>
+                <OurProducts />
+            </section>
         </>
     );
 };
