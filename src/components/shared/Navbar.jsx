@@ -33,7 +33,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             className="block text-[15px] font-semibold uppercase px-5 py-3.5 md:py-2.5 bg-transparent hover:text-navy hover:bg-white md:rounded-lg duration-300"
-                            to="/about"
+                            to="/services"
                             onClick={handleClose}
                         >
                             Services
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             className="block text-[15px] font-semibold uppercase px-5 py-3.5 md:py-2.5 bg-transparent hover:text-navy hover:bg-white md:rounded-lg duration-300"
-                            to="/about"
+                            to="/pricing"
                             onClick={handleClose}
                         >
                             Pricing
