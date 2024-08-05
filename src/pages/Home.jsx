@@ -1,15 +1,21 @@
-import React from "react";
 import Heading from "../components/Heading";
 import Hero from "../components/Hero";
 import OurProcess from "../components/OurProcess";
 import OurProducts from "../components/OurProducts";
+import OurServices from "../components/OurServices";
 import WorkGallery from "../components/WorkGallery";
 
 const Home = () => {
   return (
     <>
-    {/* ==== Hero Section ==== */}
+      {/* ==== Hero Section ==== */}
       <Hero />
+
+      {/* What We Do Section */}
+      <section className="max-width py-6">
+        <Heading>What We Do</Heading>
+        <OurServices />
+      </section>
 
       {/* ==== Our Process Section ==== */}
       <section className="max-width py-6">
