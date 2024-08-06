@@ -19,7 +19,7 @@ function FooterServiceCard() {
           </p>
           <a
             href=""
-            className="bg-primary text-white font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-white hover:text-primary"
+            className="bg-primary text-white font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-white border border-transparent hover:border-primary hover:text-primary"
           >
             <svg
               aria-hidden="true"
