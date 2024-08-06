@@ -17,13 +17,14 @@ import { RxCross1 } from "react-icons/rx";
 const BookingModal = ({ handleOpen }) => {
     return (
         <>
-            <Dialog size="sm" open={open} handler={handleOpen} className="p-4">
+            <Dialog size="md" open={open} handler={handleOpen} className="p-4">
                 <DialogHeader className="relative m-0 block text-center">
                     <Typography className="mt-4" variant="h3" color="blue-gray">
-                    Make a Booking
+                        Make a Booking
                     </Typography>
                     <Typography className="mt-1 font-normal text-gray-600">
-                    To make a booking with us, please fill out our short form below and describe the problem you are having.
+                        To make a booking with us, please fill out our short
+                        form below and describe the problem you are having.
                     </Typography>
                     <IconButton
                         size="sm"
@@ -34,138 +35,63 @@ const BookingModal = ({ handleOpen }) => {
                         <RxCross1 className="h-4 w-4 stroke-2" />
                     </IconButton>
                 </DialogHeader>
-                <DialogBody className="space-y-4 pb-6">
-                    <div>
-                        <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="mb-2 text-left font-medium"
-                        >
-                            Name
-                        </Typography>
-                        <Input
-                            color="gray"
-                            size="lg"
-                            placeholder="Enter your name"
-                            name="name"
-                            className="placeholder:opacity-100 focus:!border-t-gray-900"
-                            containerProps={{
-                                className: "!min-w-full",
-                            }}
-                            labelProps={{
-                                className: "hidden",
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="mb-2 text-left font-medium"
-                        >
-                            Phone
-                        </Typography>
-                        <Input
-                            color="gray"
-                            size="lg"
-                            placeholder="Enter you phone number"
-                            name="name"
-                            className="placeholder:opacity-100 focus:!border-t-gray-900"
-                            containerProps={{
-                                className: "!min-w-full",
-                            }}
-                            labelProps={{
-                                className: "hidden",
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="mb-2 text-left font-medium"
-                        >
-                            Category
-                        </Typography>
-                        <Select
-                            className="!w-full !border-[1.5px] !border-blue-gray-200/90 !border-t-blue-gray-200/90 bg-white text-gray-800 ring-4 ring-transparent placeholder:text-gray-600 focus:!border-primary focus:!border-t-blue-gray-900 group-hover:!border-primary"
-                            placeholder="1"
-                            labelProps={{
-                                className: "hidden",
-                            }}
-                        >
-                            <Option>Clothing</Option>
-                            <Option>Fashion</Option>
-                            <Option>Watches</Option>
-                        </Select>
-                    </div>
-                    <div className="flex gap-4">
+                <DialogBody className="space-y-4 pb-0">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <div className="w-full">
-                            <Typography
-                                variant="small"
-                                color="blue-gray"
-                                className="mb-2 text-left font-medium"
-                            >
-                                Weight
-                            </Typography>
                             <Input
-                                color="gray"
+                                color="blue"
                                 size="lg"
-                                placeholder="eg. <8.8oz | 250g"
-                                name="weight"
-                                className="placeholder:opacity-100 focus:!border-t-gray-900"
-                                containerProps={{
-                                    className: "!min-w-full",
-                                }}
-                                labelProps={{
-                                    className: "hidden",
-                                }}
+                                name="name"
+                                label="Name"
+                                required
                             />
                         </div>
                         <div className="w-full">
-                            <Typography
-                                variant="small"
-                                color="blue-gray"
-                                className="mb-2 text-left font-medium"
-                            >
-                                Size
-                            </Typography>
-                            <Input
-                                color="gray"
+                        <Input
+                                color="blue"
                                 size="lg"
-                                placeholder="eg. US 8"
-                                name="size"
-                                className="placeholder:opacity-100 focus:!border-t-gray-900"
-                                containerProps={{
-                                    className: "!min-w-full",
-                                }}
-                                labelProps={{
-                                    className: "hidden",
-                                }}
+                                name="phone-number"
+                                label="Phone"
+                                required
                             />
                         </div>
                     </div>
-                    <div>
-                        <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="mb-2 text-left font-medium"
-                        >
-                            Description (Optional)
-                        </Typography>
-                        <Textarea
-                            rows={7}
-                            placeholder="eg. This is a white shoes with a comfortable sole."
-                            className="!w-full !border-[1.5px] !border-blue-gray-200/90 !border-t-blue-gray-200/90 bg-white text-gray-600 ring-4 ring-transparent focus:!border-primary focus:!border-t-blue-gray-900 group-hover:!border-primary"
-                            labelProps={{
-                                className: "hidden",
-                            }}
-                        />
+                    <div className="flex flex-col md:flex-row gap-4">
+                        <div className="w-full">
+                            <Input
+                                color="blue"
+                                size="lg"
+                                name="email"
+                                label="Email"
+                                required
+                            />
+                        </div>
+                        <div className="w-full">
+                        <Input
+                                color="blue"
+                                size="lg"
+                                name="post-code"
+                                label="Post Code"
+                                required
+                            />
+                        </div>
                     </div>
+                    <Select className="text-[12px] leading-tight text-pretty" color="blue" label="Select Version" required>
+                        <Option>Complete Electrical Installation With 10 Year Warranty</Option>
+                        <Option>Consumer Unit / Fuse Box Replacement / Upgrade </Option>
+                        <Option>Smoke Alarm Certificate for Domestic or Commercial Properties </Option>
+                        <Option>PAT Testing Certificate </Option>
+                        <Option>Emergency Lighting Certificate for Domestic Commercial or Industrial Premises</Option>
+                        <Option>Electrical Safety Certificate for Domestic Commercial or Industrial Properties</Option>
+                    </Select>
+                    <div>
+                    <Textarea color="blue" label="Details about the issue you're having" />
+                    </div>
+                    <Typography className="text-center text-sm">By using this contact form you agree to the Heat Flow Ltd Terms & Conditions, and use of your details in accordance with our Privacy Policy</Typography>
                 </DialogBody>
                 <DialogFooter>
-                    <Button className="ml-auto" onClick={handleOpen}>
-                        Add Product
+                    <Button className="mx-auto w-full py-4 bg-blue-600 text-sm">
+                        Send Booking Request
                     </Button>
                 </DialogFooter>
             </Dialog>
