@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ServiceCard({ icon, iconText, title, image }) {
   return (
     <div className="p-3 rounded-lg shadow-card hover:shadow-card-hover duration-300 relative text-center">
@@ -11,15 +13,17 @@ function ServiceCard({ icon, iconText, title, image }) {
         alt=""
         className="rounded-lg block w-full h-[260px] object-cover"
       />
-      <div className="flex-col flex gap-5 py-8 px-3 items-center">
+      <div className="flex flex-col gap-5 py-8 px-3 items-center pb-24">
         <h1 className="text-lg sm:text-2xl font-semibold">{title}</h1>
-        <a
-          href=""
-          className="bg-primary text-white font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-secondary hover:text-black"
+      </div>
+        <div className="flex justify-center">
+        <Link
+          to=""
+          className="absolute bottom-8 bg-primary text-white font-medium px-6 py-3 inline-block rounded-md text-[15px] duration-300 group hover:bg-secondary hover:text-black"
         >
           BOOK NOW
-        </a>
-      </div>
+        </Link>
+        </div>
     </div>
   );
 }

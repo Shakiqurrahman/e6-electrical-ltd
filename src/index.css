@@ -114,9 +114,10 @@ body {
       height: 50vh;
       right: 0;
       top: 59px;
-      z-index: 100;
+      z-index: 10;
       background: #031731;
       color: white;
+      overflow: hidden;
       transition: all 0.3s ease-in-out;
     }
   
