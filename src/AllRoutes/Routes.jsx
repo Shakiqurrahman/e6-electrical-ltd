@@ -5,7 +5,9 @@ import ContactPage from "../pages/ContactPage";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import PricingPage from "../pages/PricingPage";
+import PrivaryPolicy from "../pages/PrivaryPolicy";
 import ServicePage from "../pages/ServicePage";
+import TermsAndConditions from "../pages/TermsAndConditions";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivaryPolicy />,
       },
       {
         path: "*",
