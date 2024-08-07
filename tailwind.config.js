@@ -12,6 +12,7 @@ export default withMT({
       boxShadow: {
         card: "0 0 1px 1px rgba(27, 72, 249, 0.2)",
         "card-hover": "0 0 15px 1px rgba(27, 72, 249, 0.5)",
+        "service-card": "0 0 15px 1px rgba(0, 0, 0, 0.1)",
       },
     },
   },

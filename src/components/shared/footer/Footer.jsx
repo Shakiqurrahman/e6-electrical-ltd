@@ -1,5 +1,6 @@
 import { FaFacebookF } from "react-icons/fa6";
 import { IoCall, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 import card from "../../../assets/images/card.png";
 import logo from "../../../assets/images/logo.png";
 import Copyright from "./Copyright";
@@ -73,36 +74,36 @@ const Footer = () => {
               <h1 className="text-white text-3xl font-bold">Useful Links</h1>
               <ul>
                 <li className="mt-3">
-                  <a
-                    href=""
+                  <NavLink
+                    to={"/about"}
                     className="text-[#bebebe] duration-300 hover:text-secondary"
                   >
                     About
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="mt-3">
-                  <a
-                    href=""
+                  <NavLink
+                    to={"/terms-and-conditions"}
                     className="text-[#bebebe] duration-300 hover:text-secondary"
                   >
                     Terms and Conditions
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="mt-3">
-                  <a
-                    href=""
+                  <NavLink
+                    to={"/privacy-policy"}
                     className="text-[#bebebe] duration-300 hover:text-secondary"
                   >
                     Privacy Policy
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="mt-3">
-                  <a
-                    href=""
+                  <NavLink
+                    to={"/contact"}
                     className="text-[#bebebe] duration-300 hover:text-secondary"
                   >
                     Contact Us
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
