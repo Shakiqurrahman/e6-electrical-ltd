@@ -17,7 +17,7 @@ import { RxCross1 } from "react-icons/rx";
 const BookingModal = ({ handleOpen }) => {
     return (
         <>
-            <Dialog size="md" open={open} handler={handleOpen} className="p-4">
+            <Dialog size="md" open={open} handler={handleOpen} className="p-4 overflow-y-scroll md:overflow-hidden">
                 <DialogHeader className="relative m-0 block text-center">
                     <Typography className="mt-4" variant="h3" color="blue-gray">
                         Make a Booking
