@@ -21,6 +21,23 @@ body {
   @apply text-base font-semibold uppercase px-5 py-3.5 md:py-2.5  text-navy bg-white md:rounded-lg;
 }
 
+/* CSS for default body scrolling bar */
+body::-webkit-scrollbar {
+  width: 8px; 
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2ae3ff; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #07bad5;
+}
+
 /* hero background image  */
 .hero-bg {
   background-image: url("/src/assets/images/hero-bg.jpg");
